@@ -1,0 +1,9 @@
+{
+  "name": "nv",
+  "description": "VNC",
+  "env": {
+  },
+  "website": "",
+  "repository": "",
+  "stack": "container"
+ }
