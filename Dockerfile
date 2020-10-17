@@ -13,7 +13,6 @@ RUN set -ex; \
         x11vnc \
         xvfb \
         xterm \
-        geany \
         chromium \
     && apt-get autoclean \
     && apt-get autoremove \
