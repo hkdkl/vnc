@@ -5,7 +5,7 @@ RUN set -ex; \
     && apt-get install -y --no-install-recommends \
         expect \
         bash \
-        fluxbox \
+        openbox \
         net-tools \
         socat \
         supervisor \
