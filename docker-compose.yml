@@ -5,7 +5,7 @@ services:
     environment:
       # Adjust to your screen size
       - DISPLAY_WIDTH=1200
-      - DISPLAY_HEIGHT=900
+      - DISPLAY_HEIGHT=960
     ports:
       - "80:8080"
     networks:
