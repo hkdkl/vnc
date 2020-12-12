@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM python:buster
 ENV DEBIAN_FRONTEND=noninteractive
 RUN set -ex; \
     apt-get update \
