@@ -19,6 +19,8 @@ RUN set -ex; \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
+    && git clone https://github.com/DIGITALCRIMINAL/OnlyFans
+    && pip install -r OnlyFans/requirements.txt
 
 COPY . /app
 RUN chmod +x /app/conf.d/websockify.sh
