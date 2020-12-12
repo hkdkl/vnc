@@ -16,6 +16,7 @@ RUN set -ex; \
         chromium \
         git \
         nano \
+        geany \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
