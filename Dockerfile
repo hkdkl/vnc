@@ -17,6 +17,10 @@ RUN set -ex; \
         git \
         nano \
         geany \
+        thunar \
+        dbus-x11 \
+        eog \
+        mpv \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* \
