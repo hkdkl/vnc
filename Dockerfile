@@ -14,6 +14,7 @@ RUN set -ex; \
         xvfb \
         xterm \
         chromium \
+        git \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
