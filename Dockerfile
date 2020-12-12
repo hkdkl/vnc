@@ -15,6 +15,7 @@ RUN set -ex; \
         xterm \
         chromium \
         git \
+        nano \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
