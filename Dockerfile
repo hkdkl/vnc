@@ -19,8 +19,8 @@ RUN set -ex; \
         geany \
     && apt-get autoclean \
     && apt-get autoremove \
-    && rm -rf /var/lib/apt/lists/*
-    && git clone https://github.com/DIGITALCRIMINAL/OnlyFans
+    && rm -rf /var/lib/apt/lists/* \
+    && git clone https://github.com/DIGITALCRIMINAL/OnlyFans \
     && pip install -r OnlyFans/requirements.txt
 
 COPY . /app
