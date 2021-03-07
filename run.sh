@@ -7,7 +7,7 @@ set -ex
 #EOF
 
 cat >> chr << EOF
-/usr/bin/chromium --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --no-zygote --single-process --no-pings --no-first-run --disable-accelerated-2d-canvas --disable-gpu
+/usr/bin/chromium --no-sandbox --disable-dev-shm-usage --disable-setuid-sandbox --no-zygote --single-process --no-pings --no-first-run --disable-accelerated-2d-canvas --disable-gpu
 EOF
 
 exec supervisord -c /app/supervisord.conf

@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM python:buster
 ENV DEBIAN_FRONTEND=noninteractive
 RUN set -ex; \
     apt-get update \
@@ -14,9 +14,18 @@ RUN set -ex; \
         xvfb \
         xterm \
         chromium \
+        git \
+        nano \
+        geany \
+        thunar \
+        dbus-x11 \
+        eog \
+        mpv \
     && apt-get autoclean \
     && apt-get autoremove \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && git clone https://github.com/DIGITALCRIMINAL/OnlyFans \
+    && pip install -r OnlyFans/requirements.txt
 
 COPY . /app
 RUN chmod +x /app/conf.d/websockify.sh
