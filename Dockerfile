@@ -1,4 +1,4 @@
-FROM python:buster
+FROM python:alpine
 ENV DEBIAN_FRONTEND=noninteractive
 RUN set -ex; \
     apt-get update \
