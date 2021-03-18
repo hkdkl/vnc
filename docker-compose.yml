@@ -1,7 +1,7 @@
 version: '2'
 services:
   novnc:  
-    image: wcont/nv:latest
+    image: latest
     environment:
       # Adjust to your screen size
       - DISPLAY_WIDTH=1180
