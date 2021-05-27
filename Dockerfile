@@ -13,7 +13,7 @@ RUN set -ex; \
         x11vnc \
         xvfb \
         xterm \
-        chromium \
+        firefox \
         nano \
         procps \
     && apt-get autoclean \
