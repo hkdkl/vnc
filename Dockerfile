@@ -21,6 +21,7 @@ RUN set -ex; \
         dbus-x11 \
         eog \
         mpv \
+        procps \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* \
